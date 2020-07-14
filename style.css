@@ -1,0 +1,973 @@
+@font-face {
+  font-family: Fivosansmodern Bold;
+  src: url(fivosansmodern-bold.otf);
+}
+
+@font-face {
+  font-family: Fivosansmodern Regular;
+  src: url(fivosansmodern-regular.otf);
+}
+
+@font-face {
+  font-family: Fivosansmodern Medium;
+  src: url(fivosansmodern-medium.otf);
+}
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+body {
+  font-family: Fivosansmodern Regular;
+  font-weight: 700;
+  line-height: 1.7;
+  background-color: #22222a;
+  color: #dedede;
+}
+
+h2 {
+  font-size: 72px;
+  font-family: Roboto;
+  font-weight: 600;
+  color: #ffffff;
+}
+h3 {
+  font-size: 35px;
+  font-family: Fivosansmodern Medium;
+}
+
+h4 {
+  font-size: 18px;
+  color: #6c6c76;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#web-developer {
+  color: #6c6c76;
+}
+
+nav {
+  margin-right: 30px;
+}
+
+nav a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: #dedede;
+  transition: ease all 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+a.active {
+  color: #6c6c76;
+}
+
+div.title {
+  margin-left: 25px;
+  display: flex;
+}
+
+div.title p {
+  margin-right: 5px;
+}
+
+#diamond {
+  color: #632a43;
+  margin-right: 5px;
+}
+
+div.left-panel {
+  background-color: #101015;
+  width: 40vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -3;
+}
+
+section.intro {
+  margin: 170px 150px 100px 100px;
+  text-align: left;
+}
+
+section.example-1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 100px 0;
+}
+
+div.delga-card {
+  position: relative;
+}
+
+div.delga-card:hover h2 {
+  transform: translate3d(-20px, 0px, 0px);
+}
+
+div.delga-card:hover #delgacard {
+  transform: scale(1.05);
+  opacity: 1 !important;
+}
+
+div.delga-card h2 {
+  position: absolute;
+  margin-left: 45px;
+  top: 80px;
+  transition: ease all 0.5s;
+  z-index: 2;
+}
+
+#delgacard {
+  width: 392px;
+  height: 556px;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 85px;
+  transition: ease all 0.5s;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#delgacarddots {
+  z-index: -1;
+  top: 15px;
+  left: 330px;
+  position: absolute;
+  height: 500px;
+  width: 300px;
+}
+
+div.delga-about {
+  display: inline;
+  margin-right: 70px;
+}
+
+.delga-client {
+  display: inline-flex;
+  margin-bottom: 50px;
+}
+
+.delga-client > p:nth-child(1) {
+  margin-right: 60px;
+}
+
+.example-1-about {
+  width: 45%;
+  margin-top: 100px;
+}
+
+.delga-when {
+  display: inline-flex;
+}
+
+div.delga-about {
+  /* display: inline; */
+  display: grid;
+}
+
+.delga-when > p:nth-child(1) {
+  margin-right: 60px;
+}
+
+#grey-year,
+#grey-client {
+  color: #6c6c76;
+}
+
+#delga-about-bio {
+  margin-top: 80px;
+}
+
+section.example-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 0 0 100px 0;
+}
+
+div.ewaste-card {
+  position: relative;
+}
+
+div.ewaste-card:hover h2 {
+  transform: translate3d(0px, 50px, 0px);
+}
+
+div.ewaste-card:hover #ewastecard {
+  transform: scale(1.05);
+  opacity: 1 !important;
+}
+
+div.ewaste-card h2 {
+  position: absolute;
+  margin-right: 45px;
+  top: 80px;
+  transition: ease all 0.5s;
+  z-index: 2;
+}
+
+#ewastecard {
+  width: 392px;
+  height: 556px;
+  border-radius: 8px 8px 8px 8px;
+  margin-right: 85px;
+  transition: ease all 0.5s;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#ewastecarddots {
+  z-index: -1;
+  top: 15px;
+  right: 330px;
+  position: absolute;
+  height: 500px;
+  width: 300px;
+}
+
+div.ewaste-about {
+  display: inline;
+  margin-left: 70px;
+}
+
+.ewaste-client {
+  display: inline-flex;
+  margin-bottom: 50px;
+}
+
+.ewaste-client > p:nth-child(1) {
+}
+
+.example-2-about {
+  width: 45%;
+  margin-top: 100px;
+}
+
+.ewaste-when {
+  display: inline-flex;
+}
+
+div.ewaste-about {
+  /* display: inline; */
+  display: grid;
+}
+
+.ewaste-when > p:nth-child(1) {
+}
+
+#grey-year,
+#grey-client {
+  color: #6c6c76;
+}
+
+#ewaste-about-bio {
+  margin-top: 80px;
+}
+
+.ewaste-client > p:nth-child(1) {
+  margin-right: 60px;
+}
+
+.ewaste-when > p:nth-child(1) {
+  margin-right: 60px;
+}
+
+section.example-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 100px 0;
+}
+
+div.flowers-card {
+  position: relative;
+}
+
+div.flowers-card:hover h2 {
+  transform: translate3d(0px, -25px, 0px);
+}
+
+div.flowers-card:hover #flowerscard {
+  transform: scale(1.05);
+  opacity: 1 !important;
+}
+
+div.flowers-card h2 {
+  position: absolute;
+  margin-left: 45px;
+  top: 80px;
+  transition: ease all 0.5s;
+  z-index: 2;
+}
+
+#flowerscard {
+  width: 392px;
+  height: 556px;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 85px;
+  transition: ease all 0.5s;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#flowerscarddots {
+  z-index: -1;
+  top: 15px;
+  left: 330px;
+  position: absolute;
+  height: 500px;
+  width: 300px;
+}
+
+div.flowers-about {
+  display: inline;
+  margin-right: 70px;
+}
+
+.flowers-client {
+  display: inline-flex;
+  margin-bottom: 50px;
+}
+
+.flowers-client > p:nth-child(1) {
+  margin-right: 60px;
+}
+
+.example-3-about {
+  width: 45%;
+  margin-top: 100px;
+}
+
+.flowers-when {
+  display: inline-flex;
+}
+
+div.flowers-about {
+  /* display: inline; */
+  display: grid;
+}
+
+.flowers-when > p:nth-child(1) {
+  margin-right: 60px;
+}
+
+#grey-year,
+#grey-client {
+  color: #6c6c76;
+}
+
+#flowers-about-bio {
+  margin-top: 80px;
+}
+
+#superhi {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Fivosansmodern Bold;
+}
+
+/* ----------GRID ---------*/
+
+#grid-title {
+  text-align: center;
+}
+
+section.grid {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  justify-content: center;
+  margin: 120px 0 100px 0;
+}
+
+section.grid div {
+  margin: 0 35px 30px 0;
+  position: relative;
+  text-align: center;
+  transition: ease all 0.5s;
+}
+
+section.grid div h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  color: #ffffff;
+  font-size: 24px;
+  opacity: 1;
+}
+section.grid div img {
+  transition: ease all 0.5s;
+  border-radius: 5px 5px 5px 5px;
+}
+
+section.grid div:hover img {
+  transform: scale(1.04);
+  opacity: 0.6;
+}
+
+section.grid div:hover h4 {
+  display: block;
+  opacity: 1;
+}
+
+/* Footer */
+
+footer {
+  border-top: solid 2px #4c4c5b;
+  background-color: #30303c;
+  padding: 25px 30px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+footer img {
+  margin-right: 25px;
+  opacity: 0.7;
+  transition: ease opacity 0.3s;
+}
+
+footer img:hover {
+  opacity: 1;
+}
+
+footer h4 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+div.footer-icons {
+  display: flex;
+  align-items: center;
+}
+
+#mail {
+  width: 40px;
+  height: 42px;
+}
+
+#linkedin {
+  width: 24px;
+  height: 24px;
+}
+#github {
+  width: 30px;
+  height: 30px;
+}
+
+/* ---------About Page---------- */
+
+section.about {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 100px 0;
+  margin-top: 15%;
+  margin: 100px 100px 0 0;
+  flex-wrap: wrap;
+}
+
+div.about-card {
+  position: relative;
+  height: 50vh;
+}
+
+div.about-card:hover h2 {
+  transform: translate3d(20px, 0px, 0px);
+}
+
+div.about-card:hover #aboutcard {
+  transform: scale(1.05);
+  opacity: 1 !important;
+}
+
+div.about-card h2 {
+  position: absolute;
+  margin-left: 45px;
+  top: 80px;
+  transition: ease all 0.5s;
+  z-index: 2;
+}
+
+#aboutcard {
+  width: 392px;
+  height: 556px;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 85px;
+  transition: ease all 0.5s;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#aboutcarddots {
+  z-index: -1;
+  top: 15px;
+  left: 330px;
+  position: absolute;
+  height: 500px;
+  width: 300px;
+}
+
+div.about-bio {
+  width: 50%;
+}
+
+#headshot {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0.8;
+  transition: ease all 0.5s;
+}
+
+#headshot:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+div.headshot {
+  margin: 0 0 60px 0;
+}
+
+div.contact-link {
+  display: flex;
+  margin-top: 50px;
+  justify-content: left;
+  align-items: center;
+}
+
+#arrow {
+  width: 170px;
+  height: 170px;
+  transition: ease all 0.5s;
+}
+
+div.contact-link a {
+  transition: ease all 0.5s;
+  text-decoration: none;
+  color: #dedede;
+}
+
+div.contact-link:hover #arrow {
+  transform: translate3d(5px, 0px, 0px);
+}
+
+div.contact-link:hover a {
+  transform: translate3d(0px, -5px, 0px);
+  color: #ffffff;
+}
+
+/* -------Contact Page------ */
+
+section.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 100px 0;
+  margin-top: 15%;
+  margin: 100px 100px 85vh 0;
+  flex-wrap: wrap;
+}
+
+div.contact-card {
+  position: relative;
+  height: 50vh;
+}
+
+div.contact-card:hover h2 {
+  transform: translate3d(20px, 0px, 0px);
+}
+
+div.contact-card:hover #contactcard {
+  transform: scale(1.05);
+  opacity: 1 !important;
+}
+
+div.contact-card h2 {
+  position: absolute;
+  margin-left: 45px;
+  top: 80px;
+  transition: ease all 0.5s;
+  z-index: 2;
+}
+
+#contactcard {
+  width: 392px;
+  height: 556px;
+  border-radius: 8px 8px 8px 8px;
+  margin-left: 85px;
+  transition: ease all 0.5s;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#contactcarddots {
+  z-index: -1;
+  top: 15px;
+  left: 330px;
+  position: absolute;
+  height: 500px;
+  width: 300px;
+}
+
+div.email {
+  width: 50%;
+  margin-top: 50px;
+}
+
+
+
+
+/* ----- Mobile */
+
+
+@media only screen and (max-width: 600px)  {
+
+  
+  
+  body{
+    overflow-x: hidden !important;
+  }
+/* style.css | https://2020-summer-portfolio.superhi.com/style.css */
+
+header {
+  flex-direction: column;
+}
+
+nav {
+  /* margin-right: 30px; */
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+div.title {
+  margin-bottom: 25px;
+}
+
+  
+  
+  
+  
+  main{
+    display: block!important;
+  }
+  
+  .left-panel{
+    display: none;
+  }
+  
+/* Element | https://2020-summer-portfolio.superhi.com/ */
+
+.intro {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+/* Element | https://2020-summer-portfolio.superhi.com/ */
+
+.intro > h3:nth-child(1) {
+  font-size: 18px;
+}
+
+/* style.css | https://2020-summer-portfolio.superhi.com/style.css */
+
+section.example-1 {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: block;
+}
+
+div.delga-card {
+  /* position: relative; */
+}
+
+div.delga-about {
+  /* display: grid; */
+}
+
+.example-1-about {
+  /* width: 45%; */
+  margin: 20px 40px;
+  text-align: center;
+  width: 100%;
+}
+
+#delgacard {
+  /* margin-left: 85px; */
+  margin-left: 0px;
+}
+  
+  
+/* Element | https://2020-summer-portfolio.superhi.com/ */
+
+.delga-client {
+  justify-content: center;
+}
+
+/* Element | https://2020-summer-portfolio.superhi.com/ */
+
+.delga-when {
+  justify-content: center;
+}
+
+
+  #delgacarddots, #flowerscarddots, #ewastedots{
+    display: none;
+  }
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  section.example-2 {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: block;
+}
+
+div.ewaste-card {
+  /* position: relative; */
+}
+
+div.ewaste-about {
+margin: 0;
+  }
+  
+  
+
+.example-2-about {
+  /* width: 45%; */
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#ewastecard {
+  /* margin-left: 85px; */
+  margin-left: 0px;
+}
+  
+  
+/* Element | https://2020-summer-portfolio.superhi.com/ */
+
+.ewaste-client {
+  justify-content: center;
+}
+
+/* Element | https://2020-summer-portfolio.superhi.com/ */
+
+.ewaste-when {
+  justify-content: center;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   section.example-3 {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: block;
+}
+
+div.flowers-card {
+  /* position: relative; */
+}
+
+div.flowers-about {
+margin: 0;
+  }
+  
+  
+
+.example-3-about {
+  /* width: 45%; */
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+#flowerscard {
+  /* margin-left: 85px; */
+  margin-left: 0px;
+}
+  
+  
+/* Element | https://2020-summer-portfolio.superhi.com/ */
+
+.flowers-client {
+  justify-content: center;
+}
+
+/* Element | https://2020-summer-portfolio.superhi.com/ */
+
+.flowers-when {
+  justify-content: center;
+}
+  
+  section.grid{
+    display: block;
+    
+  }
+  
+  section.grid div{
+    width: 195px;
+    height: 195px;
+    margin: auto;
+    margin-bottom: 20px;
+
+    
+    
+    
+  }
+
+  
+  footer img{
+    
+    display: none;
+  }
+
+  footer h4{
+    font-size: 14px;
+  }
+  
+  
+  
+  /* ABOUT PAGE */
+  
+  
+  
+  #aboutcard {
+ display: none;
+}
+
+  
+  div.about-card h2 {
+  position: static;
+  top: 80px;
+  transition: ease all 0.5s;
+  z-index: 2;
+    margin-left: 0;
+}
+  
+  #aboutcarddots {
+display: none;
+  }
+    
+    section.about {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin-top: 15%;
+  margin: auto;
+  flex-wrap: wrap;
+  text-align: center;
+ 
+}
+
+  
+/* style.css | https://2020-summer-portfolio.superhi.com/style.css */
+
+#arrow {
+  display: none;
+}
+
+div.contact-link {
+  /* justify-content: left; */
+  justify-content: center;
+}
+
+
+/* style.css | https://2020-summer-portfolio.superhi.com/style.css */
+
+div.contact-link a {
+  text-decoration: underline;
+}
+
+  
+  
+  /* ---- Contact Page ---- */
+  
+  
+  
+  
+  
+/* style.css | https://2020-summer-portfolio.superhi.com/style.css */
+
+#contactcard {
+  display: none;
+}
+
+section.contact {
+  /* justify-content: space-between; */
+  /* margin: 100px 100px 85vh 0; */
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+#contactcarddots {
+  display: none;
+}
+
+div.email {
+  /* width: 50%; */
+  width: 100%;
+}
+
+/* Element | https://2020-summer-portfolio.superhi.com/contact.html */
+
+.email > p:nth-child(1) {
+  text-align: center;
+}
+
+  
+  
+}
+
